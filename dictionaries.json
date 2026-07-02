@@ -1,0 +1,46 @@
+{
+  "dictionaries": [
+    {
+      "name": "Russian",
+      "locale": "ru",
+      "filename": "main_ru.dict",
+      "size_bytes": 4667885,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/main_ru.dict"
+    },
+    {
+      "name": "German",
+      "locale": "de",
+      "filename": "main_de.dict",
+      "size_bytes": 1606096,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/main_de.dict"
+    },
+    {
+      "name": "French",
+      "locale": "fr",
+      "filename": "main_fr.dict",
+      "size_bytes": 1328933,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/main_fr.dict"
+    },
+    {
+      "name": "Spanish",
+      "locale": "es",
+      "filename": "main_es.dict",
+      "size_bytes": 1377071,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/main_es.dict"
+    },
+    {
+      "name": "Italian",
+      "locale": "it",
+      "filename": "main_it.dict",
+      "size_bytes": 1143338,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/main_it.dict"
+    },
+    {
+      "name": "Portuguese (Brazil)",
+      "locale": "pt_BR",
+      "filename": "main_pt_br.dict",
+      "size_bytes": 1092054,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/main_pt_br.dict"
+    }
+  ]
+}
