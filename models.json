@@ -1,0 +1,21 @@
+{
+  "models": [
+    {
+      "name": "LM: ml4 (English, Russian)",
+      "description": "Next-word prediction model for English and Russian",
+      "languages": ["en", "ru"],
+      "filename": "ml4_q6_k.gguf",
+      "size_bytes": 30662880,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/ml4_q6_k.gguf"
+    },
+    {
+      "name": "Voice: Multilingual Whisper (41 MB)",
+      "description": "Speech-to-text model for voice input (English, Russian, and others)",
+      "languages": ["en", "ru", "de", "fr", "es"],
+      "filename": "voice-input-multilingual-39.bin",
+      "size_bytes": 43537450,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/voice-input-multilingual-39.bin",
+      "voice_model": true
+    }
+  ]
+}
