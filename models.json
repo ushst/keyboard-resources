@@ -1,11 +1,11 @@
 {
   "models": [
     {
-      "name": "LM: ml4 (English, Russian)",
-      "description": "Next-word prediction model for English and Russian",
-      "languages": ["en", "ru"],
+      "name": "LM: ml4 (Russian)",
+      "description": "Next-word prediction model for Russian",
+      "languages": ["ru"],
       "filename": "ml4_q6_k.gguf",
-      "size_bytes": 30662880,
+      "size_bytes": 36087296,
       "url": "https://github.com/ushst/keyboard-resources/releases/download/resources-v1/ml4_q6_k.gguf"
     },
     {
