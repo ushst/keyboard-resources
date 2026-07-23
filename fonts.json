@@ -7,8 +7,17 @@
       "size_bytes": 2002260,
       "url": "https://github.com/ushst/keyboard-resources/releases/download/fonts-v1/google_sans.ttf",
       "sha256": "b12e6ff46a55a968f0169e384c02c23ba91c418e1ea1b07676ad383755c2b130",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "google_sans_code",
+      "name": "Google Sans Code",
+      "filename": "google_sans_code.ttf",
+      "size_bytes": 126224,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/fonts-v1/google_sans_code.ttf",
+      "sha256": "c9649573afcd966f61096b1e9c3c3115e7b54315ca2adf9839c6f8b17d5f8e1f",
       "license": "OFL-1.1",
-      "note": "Official Google Sans Medium from fonts.google.com (SIL OFL 1.1). Not bundled in the APK."
+      "note": "Monospace companion (OFL). SF Mono cannot be redistributed under Apple's font license."
     }
   ]
 }
