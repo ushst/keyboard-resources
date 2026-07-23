@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Install font — Fluffyboard Keyboard</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 36rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.45; color: #1a1a1a; }
+    a.btn { display: inline-block; margin: 0.75rem 0.5rem 0.75rem 0; padding: 0.7rem 1.1rem; border-radius: 10px; background: #1a73e8; color: #fff; text-decoration: none; font-weight: 600; }
+    a.secondary { background: #e8eaed; color: #202124; }
+    code { word-break: break-all; font-size: 0.85em; }
+    .muted { color: #5f6368; }
+  </style>
+</head>
+<body>
+  <h1>Install font</h1>
+  <p id="status" class="muted">Opening Fluffyboard Keyboard…</p>
+  <p id="actions"></p>
+  <p class="muted">If nothing happens, tap the button below (the keyboard app must be installed).</p>
+  <script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var url = params.get("url");
+  var id = params.get("id");
+  var status = document.getElementById("status");
+  var actions = document.getElementById("actions");
+
+  if (!url || !(url.indexOf("https://") === 0 || url.indexOf("http://") === 0)) {
+    status.textContent = "Missing or invalid font URL.";
+    return;
+  }
+
+  var deep = "fboard://install?url=" + encodeURIComponent(url);
+  if (id) deep += "&id=" + encodeURIComponent(id);
+
+  // Chrome / Android intent fallback (no package pin so stable + unstable both work)
+  var intent = "intent://install?url=" + encodeURIComponent(url);
+  if (id) intent += "&id=" + encodeURIComponent(id);
+  intent += "#Intent;scheme=fboard;action=android.intent.action.VIEW;end";
+
+  var name = id || (url.split("/").pop() || "font");
+  status.textContent = "Install “" + name + "” in Fluffyboard Keyboard";
+
+  actions.innerHTML =
+    '<a class="btn" href="' + deep + '">Install in keyboard</a>' +
+    '<a class="btn secondary" href="' + url + '">Direct download</a>' +
+    '<p><code>' + deep.replace(/</g, "&lt;") + '</code></p>';
+
+  // Auto-open deep link, then intent:// shortly after for Chrome
+  location.href = deep;
+  setTimeout(function () { location.href = intent; }, 400);
+})();
+  </script>
+</body>
+</html>
