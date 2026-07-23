@@ -10,6 +10,16 @@
       "license": "OFL-1.1"
     },
     {
+      "id": "sf_mono",
+      "name": "SF Mono",
+      "filename": "sf_mono.otf",
+      "size_bytes": 110632,
+      "url": "https://github.com/ushst/keyboard-resources/releases/download/fonts-v1/sf_mono.otf",
+      "sha256": "f1826e890cfa89da5a3d0908a0ae6f10656fafe177b4de34317d5a432ffa8e89",
+      "license": "Apple Font License",
+      "note": "Optional download \u2014 not bundled in the APK. Medium weight from Apple's SF Mono package."
+    },
+    {
       "id": "google_sans_code",
       "name": "Google Sans Code",
       "filename": "google_sans_code.ttf",
